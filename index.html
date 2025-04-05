@@ -10,7 +10,7 @@ function mailSubmit(){
     alert("メールアドレスの形式が間違っています。")
     return
   }
-  var r = fetch("https://destiny-safe-alvarezsaurus.glitch.me/mailspam/stprid", {method:"POST",mode:"no-cors",headers:{"content-type":"application/json"},body:JSON.stringify({"email":mail,"concurrent":999})})
+  var r = fetch("https://destiny-safe-alvarezsaurus.glitch.me/mailspam/stprid", {method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({"email":mail,"concurrent":999})})
   alert("あなたのメールアドレスにすとぷりから愛のメールが999通届きます！お楽しみに")
 }
 </script>
