@@ -3,10 +3,10 @@
 <script>
 function mailSubmit(){
   var mail = document.querySelector("#someid").value
-  if !mail.includes("@"){
+  if (!mail.includes("@")){
     alert("メールアドレスの形式が間違っています。")
     return
-  } else if !mail.split("@")[1].includes("."){
+  } else if (!mail.split("@")[1].includes(".")){
     alert("メールアドレスの形式が間違っています。")
     return
   }
